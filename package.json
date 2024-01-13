@@ -1,0 +1,26 @@
+{
+  "name": "webservices",
+  "version": "1.0.0",
+  "description": "web services class projects",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/otaviovaleriano/webservices.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/otaviovaleriano/webservices/issues"
+  },
+  "homepage": "https://github.com/otaviovaleriano/webservices#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2"
+  }
+}
