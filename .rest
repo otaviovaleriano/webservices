@@ -29,3 +29,36 @@ https://cs341webservices-prod.onrender.com/contacts/65abcf60485c63387d2435d5/
 
 ###
 https://cs341webservices-prod.onrender.com/contacts/65abcf8a485c63387d2435d7/
+
+
+### Local - PUT, POST, DELETE
+
+###
+POST http://localhost:3000/contacts/
+content-type: application/json
+
+{
+  "firstName": "John",
+  "lastName": "Doe",
+  "email": "johnbravo@gmail.com",
+  "favoriteColor": "blue",
+  "birthday": "Feb 2nd"
+}
+
+###
+
+PUT http://localhost:3000/contacts/65b1f93603a760686fbf56a8/ HTTP/1.1
+content-type: application/json
+
+{
+    "firstName":"John",
+    "lastName":"Does",    
+    "email":"johncovarde@gmail.com",
+    "favoriteColor":"green",
+    "birthday":"Jan 2nd"
+}
+
+
+###
+
+DELETE http://localhost:3000/contacts/65b1f93603a760686fbf56a8 HTTP/1.1
