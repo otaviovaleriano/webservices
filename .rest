@@ -17,7 +17,7 @@ GET http://localhost:3000/contacts/65abcf60485c63387d2435d5/
 ###
 GET http://localhost:3000/contacts/65abcf8a485c63387d2435d7/
 
-### Deplyed on Render
+### Deployed on Render
 
 https://cs341webservices-prod.onrender.com/contacts/
 
@@ -33,7 +33,7 @@ https://cs341webservices-prod.onrender.com/contacts/65abcf8a485c63387d2435d7/
 
 ### Local - PUT, POST, DELETE
 
-###
+### Add Contact
 POST http://localhost:3000/contacts/
 content-type: application/json
 
@@ -45,8 +45,11 @@ content-type: application/json
   "birthday": "Feb 2nd"
 }
 
-###
+### Get Contact Added
+GET http://localhost:3000/contacts/65abcf4c485c63387d2435d3/
 
+
+### Update Contact
 PUT http://localhost:3000/contacts/65b1f93603a760686fbf56a8/ HTTP/1.1
 content-type: application/json
 
@@ -58,7 +61,36 @@ content-type: application/json
     "birthday":"Jan 2nd"
 }
 
+### Delete Contact
+DELETE http://localhost:3000/contacts/65b1f93603a760686fbf56a8 HTTP/1.1
+
+### Deployed on Render
+POST https://cs341webservices-prod.onrender.com/contacts/
+content-type: application/json
+
+{
+  "firstName": "John",
+  "lastName": "Doe",
+  "email": "johnbravo@gmail.com",
+  "favoriteColor": "blue",
+  "birthday": "Feb 2nd"
+}
 
 ###
+GET https://cs341webservices-prod.onrender.com/contacts/65b1fef41fe7b4244ffcae95/
 
-DELETE http://localhost:3000/contacts/65b1f93603a760686fbf56a8 HTTP/1.1
+
+###
+PUT https://cs341webservices-prod.onrender.com/contacts/65b1fef41fe7b4244ffcae95/ HTTP/1.1
+content-type: application/json
+
+{
+    "firstName":"John",
+    "lastName":"Does",    
+    "email":"johncovarde@gmail.com",
+    "favoriteColor":"green",
+    "birthday":"Jan 2nd"
+}
+
+###
+DELETE http://localhost:3000/contacts/65b1fef41fe7b4244ffcae95 HTTP/1.1
