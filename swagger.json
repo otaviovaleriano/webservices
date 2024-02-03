@@ -5,10 +5,10 @@
     "description": "Web Services API",
     "version": "1.0.0"
   },
-  "host": "https://cs341webservices-prod.onrender.com/",
+  "host": "cs341webservices-prod.onrender.com",
   "basePath": "/",
   "schemes": [
-    "http"
+    "https"
   ],
   "paths": {
     "/api-docs": {
