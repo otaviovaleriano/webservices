@@ -1,25 +1,10 @@
 var express = require('express');
-const bodyParser = require('body-parser');
 var app = express();
 app.use(express.json());
 const port = process.env.PORT || 8080;
 const mongodb = require('./db/connect');
 
-
-app
-  .use(bodyParser.json())
-  .use((req, res, next) => {
-    res.setHeader('Access-Control-Allow-Origin', '*');
-    res.setHeader('Access-Control-Allow-Headers',
-     'Origin, X-Requested-With, Content-Type, Accept, Z-Key'
-     );
-     res.setHeader('Content-Type', 'application/json');
-     res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, OPTIONS');
-     
-    next();
-  })
-  .use('/', require('./routes'));
-
+app.use('/', require('./routes/index'));
 
 app.listen(8080, () => {
     console.log(`server started on port ${port}`);
