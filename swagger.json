@@ -5,7 +5,7 @@
     "description": "Web Services API",
     "version": "1.0.0"
   },
-  "host": "localhost:8080",
+  "host": "https://cs341webservices-prod.onrender.com/",
   "basePath": "/",
   "schemes": [
     "http"
