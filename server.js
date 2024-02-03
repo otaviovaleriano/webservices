@@ -4,6 +4,8 @@ var app = express();
 app.use(express.json());
 const port = process.env.PORT || 8080;
 const mongodb = require('./db/connect');
+const swaggerUi = require('swagger-ui-express');
+const swaggerDocument = require('./swagger.json');
 
 
 app
