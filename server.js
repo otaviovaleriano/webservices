@@ -21,7 +21,7 @@ app
      
     next();
   })
-  .use('/', require('./routes'));
+  .use('/', require('./routes/index'));
 
 
 app.listen(8080, () => {
