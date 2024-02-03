@@ -1,12 +1,12 @@
 var express = require('express');
 var app = express();
 app.use(express.json());
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 8080;
 const mongodb = require('./db/connect');
 
 app.use('/', require('./routes/index'));
 
-app.listen(3000, () => {
+app.listen(8080, () => {
     console.log(`server started on port ${port}`);
 });
 
