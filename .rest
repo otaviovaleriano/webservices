@@ -8,7 +8,6 @@
 GET http://localhost:3000/contacts
 
 ###
-
 GET http://localhost:3000/contacts/65abcf4c485c63387d2435d3/
 
 ###
@@ -16,20 +15,6 @@ GET http://localhost:3000/contacts/65abcf60485c63387d2435d5/
 
 ###
 GET http://localhost:3000/contacts/65abcf8a485c63387d2435d7/
-
-### Deployed on Render
-
-https://cs341webservices-prod.onrender.com/contacts/
-
-###
-https://cs341webservices-prod.onrender.com/contacts/65abcf4c485c63387d2435d3/
-
-###
-https://cs341webservices-prod.onrender.com/contacts/65abcf60485c63387d2435d5/
-
-###
-https://cs341webservices-prod.onrender.com/contacts/65abcf8a485c63387d2435d7/
-
 
 ### Local - PUT, POST, DELETE
 
@@ -65,6 +50,20 @@ content-type: application/json
 DELETE http://localhost:3000/contacts/65b200426b3999d388e5df0c HTTP/1.1
 
 ### Deployed on Render
+
+### GET ALL CONTACTS
+https://cs341webservices-prod.onrender.com/contacts/
+
+### GET Specific Contacts
+https://cs341webservices-prod.onrender.com/contacts/65abcf4c485c63387d2435d3/
+
+### GET Specific Contacts
+https://cs341webservices-prod.onrender.com/contacts/65abcf60485c63387d2435d5/
+
+### GET Specific Contacts
+https://cs341webservices-prod.onrender.com/contacts/65abcf8a485c63387d2435d7/
+
+### POST a new contact
 POST https://cs341webservices-prod.onrender.com/contacts/
 content-type: application/json
 
@@ -76,12 +75,12 @@ content-type: application/json
   "birthday": "Feb 2nd"
 }
 
-###
-GET https://cs341webservices-prod.onrender.com/contacts/65be99d17e74272f6ab86e4b/
+### GET specific Contact
+GET https://cs341webservices-prod.onrender.com/contacts/65bee701e0548bb55f5bcd46/
 
 
-###
-PUT https://cs341webservices-prod.onrender.com/contacts/65be99d17e74272f6ab86e4b/ HTTP/1.1
+### PUT/UPDATE an existent Contact
+PUT https://cs341webservices-prod.onrender.com/contacts/65bee701e0548bb55f5bcd46/ HTTP/1.1
 content-type: application/json
 
 {
@@ -92,5 +91,5 @@ content-type: application/json
     "birthday":"Jan 2nd"
 }
 
-###
-DELETE https://cs341webservices-prod.onrender.com/contacts/65be99d17e74272f6ab86e4b/ HTTP/1.1
+### DELETE a specific Contact
+DELETE https://cs341webservices-prod.onrender.com/contacts/65bee701e0548bb55f5bcd46/ HTTP/1.1
