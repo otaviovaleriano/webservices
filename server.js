@@ -27,9 +27,9 @@ app
   .use('/', require('./routes/'));
 
 
-// app.listen(8080, () => {
-//     console.log(`server started on port ${port}`);
-// });
+app.listen(8080, () => {
+    console.log(`server started on port ${port}`);
+});
 
 mongodb.initDb((err, mongodb) => {
     if (err) {
